@@ -112,8 +112,8 @@ for i in range(0,len(all_links)):
 
 all_zips = glob.glob(dest + "\*.zip")
 
-for zip_ in all_zips:
-    prefix = zip_[71:74]
+for count, zip_ in enumerate(all_zips):
+    prefix = "{}_".format(count)
     zipdata = zipfile.ZipFile(zip_)
     zipinfos = zipdata.infolist()
     

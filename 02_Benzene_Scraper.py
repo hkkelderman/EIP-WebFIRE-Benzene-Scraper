@@ -38,7 +38,7 @@ def search_page(start_date, end_date, CFR_Part, CFR_Subpart):
     
     part = Select(driver.find_element_by_id('CFRpart'))
     part.select_by_value(CFR_Part)
-    time.sleep(5)
+    time.sleep(10)
     
     subpart = Select(driver.find_element_by_id('CFRSubpart'))
     subpart.select_by_value(CFR_Subpart)
